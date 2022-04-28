@@ -1,0 +1,105 @@
+<!DOCTYPE html> 
+<html lang="fr"> 
+	<head> 
+		<meta charset="UTF-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Formulaire de saisie - Iceberg inc.</title>
+		<link rel="shortcut icon" href="img/leptitbateau.png">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">   
+		<link rel="stylesheet" href="css/style.css"> 
+		<script type="text/javascript" src="js/app.js" async></script> 
+	</head> 
+	<body> 
+		<div class="content"> 
+			<div class="container"> 
+				<h1>Iceberg inc.</h1> 
+				<h2>Création de votre compte client</h2> 
+				<h3>Fiche de renseignements</h3> 
+				<br> 
+				<form action="ajouter_laragon.php" method="POST"> 
+					<!-- ligne 1 qui contiendra 2 colonnes : les champs jusqu'à l'entreprise pour  la première et l'illustration pour la deuxième --> 
+					<div class="row"> 
+						<!-- 1ère colonne qui prendra 6 colonnes sur 12 sur les grands écrans --> 
+						<div class="col-sm-12 col-md-6"> 
+							<!-- la 1ère colonne comprend les nom, prénom, entreprise -->  
+							<div class="form-group"> 
+								<label for="nom">Votre nom</label> 
+								<input type="text" class="form-control" id="nom" name="nom" aria describedby="nom_aide"> 
+								<small id="nom_aide">Entrez votre nom de famille</small> 
+							</div> 
+							<div class="form-group"> 
+								<label for="prenom">Votre prénom</label> 
+								<input type="text" class="form-control" id="prenom" name="prenom" aria describedby="prenom_aide"> 
+								<small id="prenom_aide">Entrez votre prénom</small> 
+							</div> 
+							<div class="form-group"> 
+								<label for="entr">Votre entreprise</label> 
+								<input type="text" class="form-control" id="entr" name="entr" aria describedby="entr_aide"> 
+								<small id="entr_aide">Entrez le nom de votre entreprise</small>
+							</div> 
+						</div> 
+						<!-- 2ème colonne avec les boutons radio et l'image qui prendra 6 colonnes  sur 12 sur les grands écrans --> 
+						<div class="col-sm-12 col-md-6 text-center"> 
+							<div class="custom-control custom-radio custom-control-inline">
+								<input type="radio" id="genre1" name="genre" class="custom-control-input" value="f"> 
+								<label class="custom-control-label" for="genre1">Vous êtes un  particulier</label> 
+							</div> 
+							<div class="custom-control custom-radio custom-control-inline">
+								<input type="radio" id="genre2" name="genre" class="custom-control-input" value="h"> 
+								<label class="custom-control-label" for="genre2">Vous êtes une  entreprise</label> 
+							</div> 
+							<img src="img/conteneurs2.jpg" class="form-img" /> 
+						</div> 
+					</div> 
+					<!-- ligne 2 qui contiendra 3 colonnes sur grand écran : les champs d'adresse,  code postal et ville --> 
+					<div class="row"> 
+						<!-- 1ère colonne qui prendra 4 colonnes sur 12 sur les grands écrans -->
+						<div class="col-sm-12 col-md-4"> 
+							<div class="form-group"> 
+								<label for="adresse">Votre adresse</label> 
+								<input type="text" class="form-control" id="adresse" name="adresse" aria describedby="adresse_aide"> 
+								<small id="adresse_aide">Entrez votre adresse (numéro + rue)</small>
+							</div> 
+						</div> 
+						<!-- 2ème colonne qui prendra 4 colonnes sur 12 sur les grands écrans -->
+						<div class="col-sm-12 col-md-4"> 
+							<div class="form-group"> 
+								<label for="cp">Votre code postal</label> 
+								<input type="text" class="form-control" id="cp" name="cp" aria describedby="cp_aide"> 
+								<small id="cp_aide">Entrez votre code postal (Ex : 49000)</small>
+							</div> 
+						</div> 
+						<!-- 3ème colonne qui prendra 4 colonnes sur 12 sur les grands écrans -->
+						<div class="col-sm-12 col-md-4"> 
+							<div class="form-group"> 
+								<label for="ville">Votre ville</label> 
+								<input type="text" class="form-control" id="ville" name="ville" aria describedby="ville_aide"> 
+								<small id="ville_aide">Entrez votre ville</small> 
+							</div> 
+						</div> 
+					</div> 
+					<!-- ligne 3 qui contiendra 2 colonnes : le champ téléphone et le champ email-- > 
+					<div class="row"> 
+					<!-- 1ère colonne qui prendra 6 colonnes sur 12 sur les grands écrans -->
+					<div class="col-sm-12 col-md-6"> 
+						<div class="form-group"> 
+							<label for="tel">Votre numéro de téléphone</label> 
+							<input type="text" class="form-control" id="tel" name="tel" aria describedby="tel_aide"> 
+							<small id="tel_aide">Entrez votre numéro de téléphone</small>
+						</div> 
+					</div> 
+					<!-- 2ème colonne qui prendra 6 colonnes sur 12 sur les grands écrans -->
+					<div class="col-sm-12 col-md-6"> 
+						<div class="form-group"> 
+							<label for="email">Votre email</label> 
+							<input type="text" class="form-control" id="email" name="email" aria describedby="email_aide"> 
+							<small id="email_aide">Entrez votre adresse de messagerie</small>
+						</div>
+					</div> 
+					<!-- bouton d'envoi du formulaire--> 
+					<button type="submit" class="btn btn-dark mb-2">Envoyer</button>
+				</form> 
+			</div> 
+		</div>
+	</body> 
+</html>

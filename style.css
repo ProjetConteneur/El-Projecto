@@ -1,0 +1,61 @@
+/* Règles sur les balises */ 
+/* ----------------------- */ 
+/* Un fond bleu très clair */ 
+body { 
+ background-color: rgb(140, 191, 134); 
+ } 
+ /* un peu d'espacement */ 
+ h1 { 
+ font-weight: bold; 
+text-align: center; 
+ margin: 1em auto; 
+ /* équivalent 
+ margin-top: 1em; 
+ margin-bottom: 1em; 
+ margin-right: auto; 
+ margin-left: auto; 
+ */ 
+ /* du rouge et/ou du centré */ 
+ } 
+ h2 { text-align: center;
+	 font-weight: bold;
+ } 
+ h3 { text-align: center; 
+ } 
+  
+/* Règles sur les classes */ 
+/* ----------------------- */ 
+ /* une couleur atténuée et une taille petite pour la classe small */
+.small { 
+ color:gray; 
+ font-size: 0.8em; 
+ margin-bottom: 1em; 
+ margin-top: 1em; 
+ } 
+ /* un peu d'espacement et une ombre portée sur le formulaire */
+.form-group { 
+ margin-top: 1em; 
+ padding: 1em; /* marge intérieure */ 
+ background-color: #f6fbff; 
+ box-shadow: 0 0 10px rgba(0,0,0,.3); /* permet de gére l'opacité */  } 
+  
+ /* un peu d'espacement sur les boutons radio*/ 
+ .custom-radio { 
+ margin-bottom: 2em; 
+ } 
+ /* un peu d'espacement sur le bouton d'envoi */ 
+ .btn-primary { 
+ margin-right: 1em; 
+ margin-left: 1em;
+ } 
+ /* taille de l'illustration */ 
+ .form-img { 
+ width: 400px; 
+height: 300px; 
+ } 
+ /* Règles affichage média */ 
+ /* ----------------------- */ 
+ /* En affichage mobile : le bouton fait toute la largeur de la page  De 0 à 768 pixels : la règle s'applique */ 
+ @media all and (max-width:768px) { 
+ .btn-expand { width: 100%; display:block; } 
+ } 
