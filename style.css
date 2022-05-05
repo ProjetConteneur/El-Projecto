@@ -2,8 +2,9 @@
 /* ----------------------- */ 
 /* Un fond bleu très clair */ 
 body { 
- background-color: rgb(140, 191, 134); 
- } 
+ color:black;
+background-color:white;
+background-image:url(elbato.png)} 
  /* un peu d'espacement */ 
  h1 { 
  font-weight: bold; 
